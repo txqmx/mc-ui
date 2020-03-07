@@ -6,10 +6,13 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
-    "test": "karma start"
+    "test": "karma start",
+    "lib": "vue-cli-service build --target lib --name mc-ui ./src/packages/index.js",
+    "docs:dev": "vuepress dev docs"
   },
+  "main": "./dist/liu-ui.umd.min.js",
   "dependencies": {
-    "core-js": "^3.6.4",
+    "core-js": "^2.6.11",
     "vue": "^2.6.11"
   },
   "devDependencies": {
@@ -28,7 +31,10 @@
     "mocha": "^7.1.0",
     "sass": "^1.25.0",
     "sass-loader": "^8.0.2",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "vuepress": "^1.3.1",
+    "element-ui": "^2.13.0",
+    "highlight.js": "^9.18.1"
   },
   "_id": "mc-ui@0.1.0",
   "readme": "ERROR: No README data found!"
