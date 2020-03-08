@@ -6,7 +6,6 @@
       <mc-button type="info">信息按钮</mc-button>
       <mc-button type="warning">警告按钮</mc-button>
       <mc-button type="danger">危险按钮</mc-button>
-
   </div>
 </template>
 

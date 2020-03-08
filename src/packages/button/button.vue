@@ -1,6 +1,6 @@
 <template>
     <button
-        class="el-button"
+        class="mc-button"
         :class="btnClass"
         @click="handleClick"
     >
@@ -23,7 +23,7 @@ export default {
         btnClass(){
             let classes = [];
             if(this.type){
-                classes.push(`el-button-${this.type}`)
+                classes.push(`mc-button-${this.type}`)
             }
             return classes
         }
@@ -44,7 +44,7 @@ $color: #606266;
 $border-color: #dcdfe6;
 $background: #ecf5ff;
 $active-color: #3a8ee6;
-.el-button{
+.mc-button{
     border-radius: $border-radius;
     border: 1px solid $border-color;
     height: $height;

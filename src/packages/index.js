@@ -1,16 +1,19 @@
 import Row from './layout/row';
 import Col from './layout/col';
 import Button from './button/button';
+import Input from './input/input';
+import Select from './select/select';
+import Option from './select/option';
 
-const components = [
-    Row,
-    Col
-];
+// const components = [];
 
 const install = (Vue) => {
     Vue.component(Row.name, Row);
     Vue.component(Col.name, Col);
     Vue.component(Button.name, Button);
+    Vue.component(Input.name, Input);
+    Vue.component(Select.name, Select);
+    Vue.component(Option.name, Option);
     // components.forEach(component => {
     //     Vue.component(component.name, component);
     // });
