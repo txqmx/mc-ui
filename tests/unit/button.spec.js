@@ -10,10 +10,10 @@ describe('button.vue',  () => {
             }
         });
         let buttonElm = wrapper.vm.$el;
-        expect(buttonElm.classList.contains('el-button-primary')).to.be.eq(true);
+        expect(buttonElm.classList.contains('mc-button-primary')).to.be.eq(true);
         wrapper.setProps({type:'warning'});
         await wrapper.vm.$nextTick();
-        expect(buttonElm.classList.contains('el-button-warning')).to.be.eq(true);
+        expect(buttonElm.classList.contains('mc-button-warning')).to.be.eq(true);
 
     });
     it('2.测试button能否正常显示slot里的内容',()=>{ // 测试当前组件运行在浏览器的情况
