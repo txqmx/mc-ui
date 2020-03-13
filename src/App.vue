@@ -13,14 +13,18 @@
     <!--<mc-input v-model="value" type="password" placeholder="请输入内容" show-password></mc-input>-->
     <!--{{value}}-->
 
-    <mc-select v-model="value" placeholder="请选择" @change="selectChange" filterable>
-      <mc-option
-              v-for="item in options"
-              :key="item.value"
-              :label="item.label"
-              :value="item.value">
-      </mc-option>
-    </mc-select>
+    <!--<mc-select v-model="value" placeholder="请选择" @change="selectChange" filterable>-->
+      <!--<mc-option-->
+              <!--v-for="item in options"-->
+              <!--:key="item.value"-->
+              <!--:label="item.label"-->
+              <!--:value="item.value">-->
+      <!--</mc-option>-->
+    <!--</mc-select>-->
+
+    {{value}}
+    <br>
+    <mc-date-picker v-model="value"></mc-date-picker>
   </div>
 </template>
 

@@ -1,19 +1,23 @@
+import Icon from './icon/icon';
 import Row from './layout/row';
 import Col from './layout/col';
 import Button from './button/button';
 import Input from './input/input';
 import Select from './select/select';
 import Option from './select/option';
+import DataPicker from './date-picker/date-picker.vue'
 
 // const components = [];
 
 const install = (Vue) => {
+    Vue.component(Icon.name, Icon);
     Vue.component(Row.name, Row);
     Vue.component(Col.name, Col);
     Vue.component(Button.name, Button);
     Vue.component(Input.name, Input);
     Vue.component(Select.name, Select);
     Vue.component(Option.name, Option);
+    Vue.component(DataPicker.name, DataPicker);
     // components.forEach(component => {
     //     Vue.component(component.name, component);
     // });

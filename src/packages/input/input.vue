@@ -6,6 +6,9 @@
             :placeholder="placeholder"
             :disabled="disabled"
             @input="handleInput"
+            @focus="$emit('focus',$event.target.value)"
+            @blur="$emit('blur',$event.target.value)"
+            @change="$emit('change',$event)"
             ref="input"
         />
         <slot name="suffix"></slot>
@@ -74,7 +77,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "@/styles/_var.scss";
+@import "../../styles/var";
 .mc-input {
     display: inline-flex;
     position: relative;
